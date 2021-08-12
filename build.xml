@@ -100,12 +100,7 @@
   </exec>
  </target>
 
- <target name="phpcb">
-  <exec executable="phpcb">
-   <arg line="--log    ${basedir}/build/logs
-              --output ${basedir}/build/code-browser" />
-  </exec>
- </target>
 
- <target name="build" depends="clean,phpab,parallelTasks,phpcb"/>
+
+ <target name="build" depends="clean,phpab,parallelTasks"/>
 </project>
